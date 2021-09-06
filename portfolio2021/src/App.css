@@ -1,39 +1,50 @@
 body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
   background-image: url(../src/backgroundimg1.jpg);
-  
-
+  /* font-family: 'Major Mono Display', monospace; */
 }
 
 .bodymain {
-  background-image: url(../src/backgroundimg1.jpg);
-  height: '100%'
+  /* background-image: url(../src/backgroundimg1.jpg); 
+  height: '100%';
+  width: '100%' */
 }
 
-.bg-image {
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  width: 100%;
-  height: 400; 
-  padding-left: '20%';
-  background-color: grey;
-  flex: 1,
+.headerBackground >* {
+  filter: blur(0px);   
+  background-color:'#121424'; 
+}
+.NameText  {
+  filter: blur(0px);  
+  color: white;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  font-family: 'Major Mono Display', monospace;
 }
 
 .bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: 1px solid #42716a;
-  top: 50%;
-  left: 50%; 
-  /* transform: translate(-50%, -50%); */
-  z-index: 2;
-  width: 80%;
+  background-color: rgb(152, 72, 72); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.865); /* Black w/opacity/see-through */
+  border: 2px solid #42716a;
+  height: 800px;
+  transform: translate(1%, 1%);
+  padding-left: 25;
   padding: 20px;
-  text-align: center;
+  /* text-align: center; */
+  font-family: 'Dawning of a New Day', cursive;
+}
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+ 
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
