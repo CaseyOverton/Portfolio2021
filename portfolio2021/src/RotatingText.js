@@ -1,10 +1,26 @@
-// const RotatingText = () => {
+import ReactRotatingText from 'react-rotating-text'
+import './App.css';
+import Typography from '@material-ui/core/Typography';
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
-//     var ReactRotatingText = require('react-rotating-text');
-
-//     return (
-// <ReactRotatingText items={['JavaScript', 'React/React-Native', 'HTML/CSS']} color='white' />
-//     )
-
-// export default RotatingText;
+import '../src/App.css'
+const theme = createMuiTheme({
+    typography: {
+      fontFamily: [
+        'Spartan',
+         'sans-serif',
+      ].join(','),
+      fontSize: 20,
+    },});
+const RotatingText = () => {
+    return (
+        <ThemeProvider theme={theme}>
+        <Typography>Efficient In: </Typography>
+        <div>
+<ReactRotatingText items={['JavaScript', 'React', 'HTML/CSS', 'React-Native' ]} color='white' font='Spartan' />
+</div>
+        </ThemeProvider>
+    )
+    }
+export default RotatingText;
 

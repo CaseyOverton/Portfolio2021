@@ -2,14 +2,14 @@ import React from 'react';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 
 const Nav = () => {
   const style = 
   {
     display: 'flex',
     justifyContent: 'center',
-    color: 'white',
-    fontSize:  30,
+    fontSize:  20,
   }
 
   const theme = createMuiTheme({
@@ -35,7 +35,7 @@ const Nav = () => {
     return (
       <ThemeProvider style={theme} >
       <Breadcrumbs style={style} aria-label="breadcrumb">
-      <Link  color='secondary' href="/">
+     <Link  color='secondary' href="/">
         Home
       </Link>
       <Link  color='secondary' href="/Contact">
