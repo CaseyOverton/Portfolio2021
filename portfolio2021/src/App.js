@@ -6,6 +6,7 @@ import RotatingText from '../src/RotatingText'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Slide from 'react-reveal/Slide';
 import Filler from '../src/Filler';
+import PictureSlide from './PictureSlider';
 
 const theme = createMuiTheme({
   typography: {
@@ -25,6 +26,7 @@ function App() {
     <div className="headerBackground">
     <div   className="bg-text">
     <Filler />
+    <PictureSlide />
     </div>
     </div>
     <div className="NameText">

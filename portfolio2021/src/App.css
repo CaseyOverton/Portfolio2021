@@ -1,9 +1,8 @@
 body, html {
-  background-image: url(../src/backgroundimg1.jpg);
+  background-image: url(../src/pictures/backgroundimg1.jpg);
   background-size: cover; /* or contain depending on what you want */
   background-position: center center;
-  background-repeat: no-repeat;
-  height: '1500%';
+  background-repeat: repeat;
   background-color: '#0B0E1D';
 }
 
@@ -12,13 +11,11 @@ body, html {
   margin-left: 20px;
   padding: 40px;
   margin-top: '-120%';
+  height: 1500;
   /* font-family: 'Major Mono Display', monospace; */
 }
 .headerBackground {
   padding: 20px;
-}
-.rotatingText {
-
 }
 .bg-text {
   /* position: 'absolute'; */
@@ -29,6 +26,7 @@ body, html {
   margin-bottom: -200%;
   margin-right: 4%;
   padding: 20px;
+  height: 1500;
 }
 .react-rotating-text-cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
@@ -44,4 +42,5 @@ body, html {
   100% {
     opacity: 0;
   }
+  
 }

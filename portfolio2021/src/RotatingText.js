@@ -15,10 +15,10 @@ const theme = createMuiTheme({
 const RotatingText = () => {
     return (
         <ThemeProvider theme={theme}>
-        <Typography>Efficient In: </Typography>
+        <Typography>Proficient In: </Typography>
         <div>
-<ReactRotatingText items={['JavaScript', 'React', 'HTML/CSS', 'React-Native' ]} color='white' font='Spartan' />
-</div>
+         <ReactRotatingText items={['JavaScript', 'React', 'HTML/CSS', 'React-Native', 'XML', ]} color='white' fontFamily='Spartan' />
+       </div>
         </ThemeProvider>
     )
     }
