@@ -19,7 +19,7 @@ const theme = createMuiTheme({
 function App() {
   return (
     
-   <div style={{ flex: 1}}>
+   <div style={{ flexDirection: 'auto', }}>
     {/* <Slide bottom> */}
     <Nav />
     <ThemeProvider theme={theme}>
@@ -27,9 +27,11 @@ function App() {
     <div   className="bg-text">
     <div className="NameText">
         <Typography style={{fontSize: '350%', marginTop: 5, marginLeft: -30, textAlign: 'left'}}>Casey Overton</Typography>
-        <RotatingText style={{ marginTop: 2, textAlign: 'left', marginLeft: -30, }} />
+        <RotatingText style={{ marginTop: 2, textAlign: 'left', marginLeft: '-60' }} />
      </div>
+     <div>
     <Filler />
+    </div>
     {/* <PictureSlide /> */}
     </div>
     </div>

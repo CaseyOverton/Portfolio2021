@@ -7,7 +7,7 @@ import '../src/App.css'
 
 const Filler = () => {
     return (
-        <Typography style={{color: 'white', marginTop: '23%', }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar ante in libero dapibus pharetra. Mauris venenatis vestibulum sapien sed tincidunt. Aliquam erat volutpat. Aliquam condimentum eget erat non elementum. Nunc vel purus at dui rhoncus euismod eget in turpis. Suspendisse sem justo, porta vitae augue mollis, lobortis fermentum velit. Nunc eget turpis ut neque facilisis venenatis et a leo. Aenean semper euismod lorem, vel blandit diam interdum a. Mauris eu odio enim. Aenean at ultricies nunc.
+        <Typography style={{color: 'white' }}>
 
 Ut maximus leo dignissim, consectetur libero et, placerat enim. Curabitur luctus purus ac condimentum sollicitudin. Maecenas hendrerit volutpat ante, in commodo turpis malesuada pulvinar. In non sapien id velit maximus finibus vitae in magna. Nulla facilisi. Sed non dolor vitae est faucibus laoreet. Sed finibus, quam et elementum tincidunt, eros diam feugiat enim, et congue eros lorem vitae leo. Vestibulum mauris velit, malesuada in enim vel, feugiat euismod risus. Nunc vel dui aliquet, sollicitudin urna sed, aliquam erat. Maecenas vitae quam felis. Nullam volutpat cursus est, nec porta ex.
 
