@@ -6,7 +6,7 @@ import RotatingText from '../src/RotatingText'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Slide from 'react-reveal/Slide';
 import Filler from '../src/Filler';
-// import PictureSlide from './PictureSlider';
+import PictureSlide from './PictureSlider';
 
 const theme = createMuiTheme({
   typography: {
@@ -24,16 +24,18 @@ function App() {
     <Nav />
     <ThemeProvider theme={theme}>
     <div className="headerBackground">
-    <div   className="bg-text">
-    <div className="NameText">
-        <Typography style={{fontSize: '350%', marginTop: 5, marginLeft: -30, textAlign: 'left'}}>Casey Overton</Typography>
-        <RotatingText style={{ marginTop: 2, textAlign: 'left', marginLeft: '-60' }} />
-     </div>
+      <div   className="bg-text">
+        <div className="NameText">
+          <Typography style={{fontSize: '350%', marginTop: 5, marginLeft: -30, textAlign: 'left'}}>Casey Overton</Typography>
+          <RotatingText style={{ marginTop: 2, textAlign: 'left', }} />
+       </div>
      <div>
-    <Filler />
-    </div>
-    {/* <PictureSlide /> */}
-    </div>
+        <Filler />
+     </div>
+       <div>
+         <PictureSlide />
+       </div>
+    </div> 
     </div>
  
     </ThemeProvider>
