@@ -1,38 +1,28 @@
 import React from 'react';
-import { Fade } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'
-
-const fadeImages = [
-  {
-  url: './pictures/backgroundimg1',
-  caption: 'First Slide'
-  },
-  {
-  url: './pictures/backgroundimg1',
-  caption: 'Second Slide'
-  },
-  {
-  url: './pictures/backgroundimg1',
-  caption: 'Third Slide'
-  },
-];
-
+import { Zoom } from 'react-slideshow-image';
 
 const PictureSlide = () => {
-    return (
-      <div className="slide-container">
-      <Fade>
-        {fadeImages.map(fadeImage, index) => (
-          <div className="each-fade" key={index}>
-            <div className="image-container">
-              <img src={fadeImage.url} />
-            </div>
-            <h2>{fadeImage.caption}</h2>
-          </div>
-        )}
-      </Fade>
-    </div>
-    )
-} 
+  const images = [
+    './pictures/backgroundimg1',
+    './pictures/backgroundimg1',
+    './pictures/backgroundimg1'
+  ];
 
-export default PictureSlide
+  const zoomInProperties = {
+    indicators: true,
+    scale: 1.4
+  }
+  return (
+    <div>
+      <Zoom {...zoomInProperties}>
+        {images.map((each, index) => (
+          <div key={index} style={{width: "100%"}}>
+            <img style={{ objectFit: "cover", width: "100%" }} src={each} />
+          </div>
+        ))}
+      </Zoom>
+    </div>
+  )
+}
+
+export default PictureSlide;
