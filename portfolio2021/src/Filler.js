@@ -12,7 +12,7 @@ const Filler = () => {
                Full Stack/Front End Developer
             </Typography>
             <Typography style={{color: 'white' }}>
-                 Passionate hard-working web developer interested in frontend and full-stack development. Experience in react and react native frameworks as well as Javascript and Node/NPM. Well versed in Agile Methodologies and Github collaborations. Looking for an environment to learn as much possible!
+                 Passionate hard-working web/mobile developer interested in frontend and full-stack development. Experience in react and react native frameworks as well as Javascript and Node/NPM. Well versed in Agile Methodologies and Github collaborations. Looking for an environment to learn as much possible and produce dry, reusable code!
              </Typography>
         </div>
     )
