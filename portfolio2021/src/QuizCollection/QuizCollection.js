@@ -13,7 +13,7 @@ const theme = createMuiTheme({
     ].join(','),
   },});
 
-function App() {
+function QuizCollection() {
   return (
     
    <div style={{ flexDirection: 'auto', }}>

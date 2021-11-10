@@ -6,7 +6,7 @@ import RotatingText from '../src/RotatingText'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Slide from 'react-reveal/Slide';
 import Filler from '../src/Filler';
-import PictureSlide from './PictureSlider';
+import PictureSlide from './PictureCarousel/PictureSlide';
 
 const theme = createMuiTheme({
   typography: {
@@ -27,7 +27,9 @@ function App() {
       <div   className="bg-text">
         <div className="NameText">
           <Typography style={{fontSize: '350%', marginTop: 5, marginLeft: -30, textAlign: 'left'}}>Casey Overton</Typography>
-          <RotatingText style={{ marginTop: 2, textAlign: 'left', }} />
+          <div style={{ marginLeft: -20, }} >
+            <RotatingText />
+          </div>
        </div>
      <div>
         <Filler />
