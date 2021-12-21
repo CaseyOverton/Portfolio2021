@@ -1,21 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import Carousel from './Carousel';
 import styled from 'styled-components';
-
-
+import img1 from '../pictures/backgroundimg1.jpg'
+import img2 from '../pictures/backgroundimg1.jpg'
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20,
 `;
+export const images = [
+  img1,
+  img2,
+];
+
 export default function PictureSlide() {
 
   const [index, setIndex] = useState(0);
   const [width, setWidth] = useState(0);
   const [xPosition, setXPosition] = useState(0);
 
-const images = ['../pictures/backgroundimg1', '../pictures/backgroundimg1',]
 
 const handleClickPrev = () => { 
     if (index === 0) return;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import Forward from '@material-ui/icons/Forward';
 
 
 const Button = styled.img`
@@ -16,8 +16,8 @@ const Button = styled.img`
 function Buttons({ handleClickPrev, handleClicknext }) {
   return (
     <>
-      <Button src={ArrowForwardIcon} side="prev" onClick={handleClickPrev} />
-      <Button src={ArrowForwardIcon} side="next" onClick={handleClicknext} />
+      <Button src={Forward} side="prev" onClick={handleClickPrev} />
+      <Button src={Forward} side="next" onClick={handleClicknext} />
     </>
   );
 }

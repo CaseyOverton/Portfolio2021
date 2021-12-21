@@ -3,7 +3,7 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-
+import WeatherApiFetch from './Weather/WeatherApiFetch'
 const Nav = () => {
   const style = 
   {

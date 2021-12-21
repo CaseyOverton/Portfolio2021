@@ -1,12 +1,12 @@
-body, html {
+body,
+html {
   background-image: url(../src/pictures/backgroundimg1.jpg);
-  background-size: cover; /* or contain depending on what you want */
+  background-size: cover;
   background-position: center center;
   background-repeat: repeat;
   background-color: '#0B0E1D';
 }
-
-.NameText  {
+.NameText {
   color: white;
   margin-left: 20px;
   padding: 40px;
@@ -20,25 +20,36 @@ body, html {
 .bg-text {
   /* position: 'absolute'; */
   /* background-color: rgb(152, 72, 72); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.911); 
+  background-color: rgba(0, 0, 0, 0.911);
   border: 2px solid rgb(119, 255, 223);
   margin-right: 4%;
   padding: 20px;
   height: auto;
 }
+.weatherDisplay {
+  color: 'white';
+  height: 40,
+}
+.PictureSlide {
+  padding: 40;
+  margin-top: 10,
+}
+
 .react-rotating-text-cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
 }
- 
+
 @keyframes blinking-cursor {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
-  
+
 }
