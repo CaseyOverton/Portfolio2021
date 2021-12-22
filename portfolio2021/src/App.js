@@ -9,7 +9,7 @@ import Slide from 'react-reveal/Slide';
 import Filler from '../src/Filler';
 import PictureSlide from './PictureCarousel/PictureSlide';
 import WeatherDisplay from '../src/Weather/Weather'
-
+require("dotenv").config();
 function App() {
   const [lat, setLat] = useState([]);
   const [long, setLong] = useState([]);
@@ -45,15 +45,20 @@ function App() {
     <Nav />
     <ThemeProvider theme={theme}>
     <div className="headerBackground">
-    <div>
-    {(typeof data.main != 'undefined') ? (
-      <WeatherDisplay weatherData={data}/>
-    ): (
-      <div></div>
-    )}
-    </div>
     
       <div   className="bg-text">
+        <>
+      {(typeof data.main != 'undefined') ? (
+        <WeatherDisplay weatherData={data}/>
+      ): (
+        <div>
+          <Typography>
+            Not Working!
+          </Typography>
+        </div>
+      )}
+      </>
+      
         <div className="NameText">
           <Typography style={{fontSize: '350%', marginTop: 5, marginLeft: -30, textAlign: 'left'}}>Casey Overton</Typography>
           <Typography style={{fontSize: '150%',  marginLeft: -20, textAlign: 'left'}}>Full Stack/Front End Developer</Typography>

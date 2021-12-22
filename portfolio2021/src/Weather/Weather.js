@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 
 const WeatherDisplay = ({weatherData}) => (
     <Typography className="weatherDisplay">
-        {weatherData.name}, 
+        {weatherData.name}, Weather! 
     </Typography>
 )
 
