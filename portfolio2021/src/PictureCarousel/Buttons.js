@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Forward from '@material-ui/icons/Forward';
-
+import rightArrow from './noun-arrow-2335727.svg';
+import leftArrow from './noun-arrow-2335785.svg';
 
 const Button = styled.img`
   position: absolute;
@@ -16,8 +17,8 @@ const Button = styled.img`
 function Buttons({ handleClickPrev, handleClicknext }) {
   return (
     <>
-      <Button src={Forward} side="prev" onClick={handleClickPrev} />
-      <Button src={Forward} side="next" onClick={handleClicknext} />
+      <Button src={leftArrow} style={{height: 30 }}  side="prev" onClick={handleClickPrev} />
+      <Button src={rightArrow} style={{height: 30 }} side="next" onClick={handleClicknext} />
     </>
   );
 }

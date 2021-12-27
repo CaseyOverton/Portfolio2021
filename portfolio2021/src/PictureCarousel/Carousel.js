@@ -47,4 +47,3 @@ return (
   );
 }
 export default Carousel;
-// alt={...}

@@ -2,6 +2,7 @@ import React from 'react';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import Moment from 'react-moment';
 
 const Nav = () => {
   const style = 
@@ -10,7 +11,7 @@ const Nav = () => {
     justifyContent: 'center',
     fontSize:  20,
   }
-
+ 
   const theme = createMuiTheme({
     typography: {
       fontFamily: [
@@ -30,7 +31,8 @@ const Nav = () => {
             contrastText: '#000'
         }
       });
-
+      const date = new Date();
+    
     return (
       <ThemeProvider style={theme} >
       <Breadcrumbs style={style} aria-label="breadcrumb">
@@ -43,6 +45,9 @@ const Nav = () => {
       <Link   color='secondary' href="/Resume">
         Resume
       </Link>
+      <div style={{paddingRight: '-50%', }} >
+      <Moment  style={{color: '#00a883', fontSize: 20,}} format='h:mm a'>{date}</Moment>
+      </div>
     </Breadcrumbs>
     </ThemeProvider>
    

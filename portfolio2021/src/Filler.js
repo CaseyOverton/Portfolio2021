@@ -13,6 +13,7 @@ const Filler = () => {
             <Typography style={{color: 'white', fontSize: 25, }}>
                About Me
             </Typography>
+            <hr style={{borderColor:'#9DFFCC' }}  />
             <br></br>
             <Typography style={{color: 'white' }}>
                  Passionate hard-working web/mobile developer interested in frontend and full-stack development. Experience in react and react native frameworks as well as Javascript and Node/NPM. Currently building ios/andriod application with team. Well versed in Agile Methodologies and Github collaborations. Looking for an environment to learn as much possible and produce dry, reusable code!
