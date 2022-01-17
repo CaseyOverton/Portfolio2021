@@ -21,7 +21,8 @@
     "react-rotating-text": "^1.4.1",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
-    "react-slideshow-image": "^3.6.0",
+    "react-slick": "^0.28.1",
+    "react-slideshow-image": "^3.6.1",
     "styled-components": "^5.3.3",
     "web-vitals": "^1.0.1"
   },
