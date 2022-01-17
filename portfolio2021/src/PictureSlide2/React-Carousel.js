@@ -6,13 +6,13 @@ import img1 from '../pictures/backgroundimg1.jpg';
 import Typography from '@material-ui/core/Typography';
 const Gallery = () => {
     return (
-      <div style={{ height: 400,}}>
+      <div style={{ }}>
         <Zoom scale={0.4}>
           {
             <>
             <img style={{height: '100%', width:'70%'}} src={img1} />
-            <div style={{backgroundColor: '#218056',}}>
-              <Typography style={{ height: '100%', marginTop: '10%'}}>Working in a professional work environment, as a part of a full stack team, I developed functional pages of a React-Native applicaiton using JSX, and typescript mostly. While the Github repository is private, here are various shots of the pages assembled by myself using dry, reusable code.</Typography>
+            <div style={{backgroundColor: 'transparent', border: '2px solid rgb(119, 255, 223)',}}>
+              <Typography style={{ height: '100%', fontWeight: 'bold', padding: 30, color: 'white', textAlign: 'center',}}> Currently developing pages of a multi-operating system React-Native applicaiton using JSX, and typescript mostly. While the Github repository is private, here are various shots of the application made by myself using hooks, ES6 and more!</Typography>
             </div>
             </>
           },
