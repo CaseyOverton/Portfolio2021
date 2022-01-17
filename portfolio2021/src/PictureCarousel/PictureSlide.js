@@ -9,11 +9,12 @@ const Wrapper = styled.div`
   align-items: center;
   padding: 20,
 `;
-export const images = [
+
+
+const images = [
   img1,
   img2,
 ];
-
 export default function PictureSlide() {
 
   const [index, setIndex] = useState(0);

@@ -1,16 +1,12 @@
 import React from "react";
-import logo from './logo.svg';
 import './App.css';
 import Typography from '@material-ui/core/Typography';
 import Nav from '../src/nav'
 import RotatingText from '../src/RotatingText'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Filler from '../src/Filler';
-import PictureSlide from './PictureCarousel/PictureSlide';
-
-require("dotenv").config();
+import Gallery from './PictureSlide2/React-Carousel'
 function App() {
-
   const theme = createMuiTheme({
     typography: {
       fontFamily: [
@@ -19,7 +15,6 @@ function App() {
       ].join(','),
     },});
   return (
-    
    <div style={{ flexDirection: 'auto', }}>
     {/* <Slide bottom> */}
     <Nav />
@@ -37,8 +32,8 @@ function App() {
      <div>
         <Filler />
      </div>
-       <div className="PictureSlide">
-           <PictureSlide />
+       <div>
+           <Gallery />
        </div>
     </div> 
     </div>
