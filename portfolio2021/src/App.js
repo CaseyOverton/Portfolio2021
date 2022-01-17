@@ -16,11 +16,9 @@ function App() {
     },});
   return (
    <div style={{ flexDirection: 'auto', }}>
-    {/* <Slide bottom> */}
     <Nav />
     <ThemeProvider theme={theme}>
     <div className="headerBackground">
-    
       <div   className="bg-text">
         <div className="NameText">
           <Typography style={{fontSize: '350%', marginTop: 5, marginLeft: -30, textAlign: 'left'}}>Casey Overton</Typography>
