@@ -3,7 +3,8 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Moment from 'react-moment';
-
+// import Contact from './Contact/Contact'
+// import Router from '@material-ui/'
 const Nav = () => {
   const style = 
   {
@@ -36,6 +37,7 @@ const Nav = () => {
     return (
       <ThemeProvider style={theme} >
       <Breadcrumbs style={style} aria-label="breadcrumb">
+        {/* <Router> */}
      <Link  color='secondary' href="/">
         Home
       </Link>
@@ -45,6 +47,7 @@ const Nav = () => {
       <Link   color='secondary' href="/Resume">
         Resume
       </Link>
+      {/* </Router> */}
       <div style={{paddingRight: '-50%', }} >
       <Moment  style={{color: '#00a883', fontSize: 20,}} format='h:mm a'>{date}</Moment>
       </div>

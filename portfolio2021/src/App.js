@@ -31,7 +31,7 @@ function App() {
         <Filler />
      </div>
        <div>
-           <Gallery />
+        <Gallery />
        </div>
     </div> 
     </div>
