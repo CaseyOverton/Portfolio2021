@@ -18,8 +18,6 @@ html {
   padding: 20px;
 }
 .bg-text {
-  /* position: 'absolute'; */
-  /* background-color: rgb(152, 72, 72); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.911);
   border: 2px solid rgb(119, 255, 223);
   margin-right: 4%;
@@ -37,6 +35,15 @@ html {
 
 .react-rotating-text-cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+.contacts {
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.911);
+  border: 2px solid rgb(119, 255, 223);
+  margin-right: 4%;
+  padding: 20px;
+ 
+
 }
 
 @keyframes blinking-cursor {
