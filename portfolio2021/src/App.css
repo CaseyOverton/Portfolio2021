@@ -24,6 +24,13 @@ html {
   padding: 20px;
   height: auto;
 }
+.bg-textC {
+  background-color: rgba(0, 0, 0, 0.887);
+  border: 2px solid rgb(74, 120, 249);
+  margin-right: 4%;
+  padding: 20px;
+  height: auto;
+}
 .weatherDisplay {
   color: 'white';
   height: 40,
@@ -36,14 +43,32 @@ html {
 .react-rotating-text-cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
 }
-.contacts {
-  justify-content: center;
+.contact1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.911);
-  border: 2px solid rgb(119, 255, 223);
-  margin-right: 4%;
-  padding: 20px;
- 
-
+  border: 2px solid rgb(231, 255, 53);
+  margin-right: 30%;
+  margin-left: 10%;
+  padding: 10px;
+}
+.contact2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.911);
+  border: 2px solid rgb(255, 129, 32);
+  margin-right: 20%;
+  margin-left: 20%;
+  padding: 10px;
+}
+.contact3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.911);
+  border: 2px solid #ff2a6a;
+  margin-right: 10%;
+  margin-left: 30%;
+  padding: 10px;
+}
+.contactContainer {
+  flex-direction: column;
 }
 
 @keyframes blinking-cursor {

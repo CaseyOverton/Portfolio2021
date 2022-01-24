@@ -24,7 +24,7 @@ const Gallery = () => {
               {/* <a href='https://github.com/CaseyOverton/crypto-dashboard?organization=CaseyOverton&organization=CaseyOverton'>Website</a> */}
             </div>
             </>
-          },
+          }
           {
          <>
          <img style={{ height: '60%', width:'60%',  }} src={img2} />
@@ -38,7 +38,7 @@ const Gallery = () => {
            </div>
          </div>
          </>
-          },
+          }
           {
             <>
             <img style={{height: '60%', width:'60%',  marginBottom: 100,}} src={img3} />
@@ -51,7 +51,7 @@ const Gallery = () => {
               
             </div>
             </>
-          },
+          }
         </Zoom>
       </div>
     )
