@@ -1,26 +1,30 @@
 body,
 html {
-  background-image: url(../src/pictures/backgroundimg1.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: repeat;
-  background-color: '#0B0E1D';
+  background-color: var(--background);
+  color: var(--text-primary);
 }
 .NameText {
-  color: white;
+  color: var(--text-primary);
   margin-left: 20px;
   padding: 40px;
   margin-top: '-120%';
   height: 1500;
   /* font-family: 'Major Mono Display', monospace; */
 }
+.fillerText { 
+  color: var(--text-primary);
+  font-size: 100;
+  font-weight: 700;
+}
 .headerBackground {
   padding: 20px;
 }
 .bg-text {
-  background-color: rgba(0, 0, 0, 0.911);
-  border: 2px solid rgb(119, 255, 223);
+  color: var(--text-primary);
+  background-color: var(--background);
+  border: 2px solid var(--bar1);
   margin-right: 4%;
+  font-weight: 700;
   padding: 20px;
   height: auto;
 }
@@ -46,7 +50,16 @@ html {
   padding: 40;
   margin-top: 10,
 }
-
+Button {
+  color: var(--buttonText);
+  background-color: var(--button);
+  border: 2px var(--text-primary) solid;
+  float: right;
+  margin-right: 5;
+  border-radius: 10px;
+  border-width: 10;
+  transition: all .5s;
+}
 .react-rotating-text-cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
 }
@@ -85,7 +98,11 @@ html {
   align-content: center;
   margin-left: 20%;
   margin-right: 20%;
-  
+}
+@media (max-width: 479px) {
+  body {
+      font-size: 13px;
+  }
 }
 
 @keyframes blinking-cursor {

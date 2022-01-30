@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:root {
+  --background: rgb(255, 205, 227);
+  --text-primary: rgb(48, 47, 47);
+  --text-secondary: royalblue;
+  --accent: purple;
+  --bar1: purple;
+  --buttonText: rgb(252, 252, 252);
+  --button: rgba(27, 60, 39, 0.805);
+}
+[data-theme='dark'] {
+  --background: black;
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+  --buttonText: rgb(5, 24, 18);
+  --button: rgba(217, 249, 243, 0.755);
+}
