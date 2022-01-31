@@ -2,9 +2,11 @@ import React from 'react';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography'
 import '../App.css';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import RotatingText from '../RotatingText'
-import Filler from '../Filler';
+import BulletPoints from '../Filler';
 import Gallery from '../PictureSlide2/React-Carousel'
+
 const Home = () => {
     const theme = createMuiTheme({
         typography: {
@@ -14,6 +16,7 @@ const Home = () => {
           ].join(','),
         },});
     return (
+      <div>
         <ThemeProvider theme={theme}>
              <div className="headerBackground">
                  <div className="bg-text">
@@ -23,14 +26,18 @@ const Home = () => {
                     <div style={{ marginLeft: -20, }} >
                         <RotatingText />
                     </div>
-                    <>
-                      <Filler />
-                      <Gallery />
-                    </>
+                    <AnimationOnScroll animateIn='animate__fadeInUp'>
+                      <BulletPoints />
+                      <div className='imageSlide'>
+                      <Gallery/>
+                      </div>
+                    </AnimationOnScroll>
+                    
                 </div>
              </div>
            </div>
          </ThemeProvider>
+         </div>
     
     );
 }

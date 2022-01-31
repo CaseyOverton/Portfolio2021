@@ -12,17 +12,18 @@ code {
     monospace;
 }
 :root {
-  --background: rgb(255, 205, 227);
-  --text-primary: rgb(48, 47, 47);
+  --background: rgb(228, 217, 189);
+  --background1: rgb(118, 160, 127);
+  --text-primary: rgb(24, 30, 26);
   --text-secondary: royalblue;
-  --accent: purple;
-  --bar1: purple;
+  --accent: rgb(57, 119, 114);
+  --bar1: rgb(49, 84, 85);
   --buttonText: rgb(252, 252, 252);
   --button: rgba(27, 60, 39, 0.805);
 }
 [data-theme='dark'] {
-  --background: black;
-  --text-primary: white;
+  --background: rgb(19, 19, 19);
+  --text-primary: rgb(48, 47, 47);
   --text-secondary: grey;
   --accent: darkred;
   --buttonText: rgb(5, 24, 18);

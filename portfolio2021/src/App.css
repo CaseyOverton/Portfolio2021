@@ -1,5 +1,6 @@
 body,
 html {
+  background-image: url(./pictures/BackgroundTry1.png));
   background-color: var(--background);
   color: var(--text-primary);
 }
@@ -17,6 +18,7 @@ html {
   font-weight: 700;
 }
 .headerBackground {
+  background-color: var(--background1);
   padding: 20px;
 }
 .bg-text {
@@ -99,11 +101,16 @@ Button {
   margin-left: 20%;
   margin-right: 20%;
 }
-@media (max-width: 479px) {
-  body {
-      font-size: 13px;
+@media only screen and (max-width: 600px) {
+  .imageSlide {
+      display: none;
   }
 }
+/* @media (max-width: 479px) {
+  body {
+      font-size: 13px;
+  } */
+/* } */
 
 @keyframes blinking-cursor {
   0% {

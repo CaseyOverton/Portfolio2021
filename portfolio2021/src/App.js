@@ -20,8 +20,8 @@ function App() {
     <div data-theme={theme}>
     <Router>
       <Nav />
-       <button onClick={switchTheme}>
-       {theme === 'light' ? 'Dark' : 'Light'} Theme <div style={{marginTop:2}}><IoIosSunny /> </div>
+        <button onClick={switchTheme}>
+         {theme === 'light' ? 'Dark' : 'Light'} Theme <div style={{marginTop:2}}><IoIosSunny /> </div>
         </button>
         <Routes>
            <Route exact path="/" element={<Home />} />

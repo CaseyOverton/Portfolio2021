@@ -2,35 +2,52 @@ import ReactRotatingText from 'react-rotating-text'
 import './App.css';
 import Typography from '@material-ui/core/Typography';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 import '../src/App.css'
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { GoZap } from "react-icons/go";
-const Filler = () => {
+const BulletPoints = () => {
     return (
-        <div style={{height: 1100, marginTop: 100, }}>
+        <div style={{height: 700, marginTop: 100, }}>
              <br></br>
              <br></br>
+             <AnimationOnScroll animateIn='animate__fadeInUp'>
             <Typography style={{color: 'var(--text-primary)',  fontSize: 35 , fontWeight: 'bold'}}>
                About Me
             </Typography>
+            </AnimationOnScroll>
             <hr style={{borderColor:'#9DFFCC' }}  />
-            <br></br>
-           
+            <br/>
+            <br/>
+            <AnimationOnScroll animateIn='animate__fadeInUp'>
+                <Typography style={{color: 'var(--text-primary)',  fontSize: 25 , fontWeight: 'bold'}}>  <GoZap />
+                Interested in frontend and full-stack development.
+               </Typography>
+            </AnimationOnScroll>
+             
+             <br/>
+             <br/>
+             <AnimationOnScroll animateIn='animate__fadeInUp'>
+            <Typography style={{color: 'var(--text-primary)',  fontSize: 25 , fontWeight: 'bold'}}>  <GoZap />
+            Currently building ios/andriod application with team. Well versed in Agile Methodologies and Github collaborations. 
+               </Typography>
+             </AnimationOnScroll >
+             <br/> <br/>
+             <AnimationOnScroll animateIn='animate__fadeInUp'>
+            <Typography style={{color: 'var(--text-primary)',  fontSize: 25 , fontWeight: 'bold'}}>  <GoZap />
+            Looking for an environment to learn as much possible and produce dry, reusable code!
+               </Typography>
+             </AnimationOnScroll>
+             <br/> <br/>
+             <AnimationOnScroll animateIn='animate__fadeInUp'>
             <Typography style={{color: 'var(--text-primary)',  fontSize: 25 , fontWeight: 'bold'}}>  <GoZap />
                 Interested in frontend and full-stack development.
-                <br/><br/><GoZap />Experience in react and react native frameworks as well as Javascript and Node/NPM. <br/><br/>
-                <GoZap />
-                Currently building ios/andriod application with team. Well versed in Agile Methodologies and Github collaborations. <br/><br/>
-                <GoZap />
-                 Currently Looking for an environment to learn as much possible and produce dry, reusable code!
-             </Typography>
-             <br></br>
-             <br></br>
-             <br></br>
+               </Typography>
+             </AnimationOnScroll>
              <br></br>
              <br></br>
         </div>
     )
     }
-export default Filler;
+export default BulletPoints;
 
