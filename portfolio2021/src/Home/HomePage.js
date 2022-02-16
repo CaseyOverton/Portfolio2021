@@ -6,7 +6,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import RotatingText from '../RotatingText'
 import BulletPoints from '../Filler';
 import Gallery from '../PictureSlide2/React-Carousel'
-
+import TimeLineComponent from './TimeLine'
 const Home = () => {
     const theme = createMuiTheme({
         typography: {
@@ -32,7 +32,7 @@ const Home = () => {
                       <Gallery/>
                       </div>
                     </AnimationOnScroll>
-                    
+                    <TimeLineComponent />
                 </div>
              </div>
            </div>
@@ -43,3 +43,17 @@ const Home = () => {
 }
  
 export default Home;
+
+// Semantic HTML and modular CSS and JavaScript (ES6 and onwards)
+// Testing and resolving performance concerns
+// Strong understanding of core OOP practices
+// Strong understanding and experience with Angular, React, Vue, or other modern JS frameworks (Preferably AngularJs)
+// Familiarity with TypeScript (or experience with other strongly typed languages)
+// CSS preprocessors (i.e., Sass) and advanced CSS concepts (i.e., CSS3)
+// Understanding of Design Patterns and when/how to apply them
+// Strong ability to break down UI designs into extensible/modifiable/reusable/responsive component architectures
+// Leveraging APIs
+// Progressive enhancement
+// Team Git workflow and version control
+// Package managers (i.e., NPM, Yarn)
+// Scrum/agile software development methodologies 

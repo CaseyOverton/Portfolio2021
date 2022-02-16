@@ -16,6 +16,7 @@ const Contact = () => {
         },});
     return (
         <ThemeProvider theme={theme}>
+          
              <div className="headerBackground">
                  <div className="bg-textC">
                       <div className="NameText">
@@ -25,17 +26,21 @@ const Contact = () => {
                   </div>
              </div>
              <div className="contactContainer">
+             <br />
              <div className="contact1">
-               <Typography style={{color: 'white', textAlign: 'center', fontSize: '120%'}}><AiOutlineMail  style={{padding: 3}}/>Email: Overtonc1@gmail.com </Typography>
+               <Typography style={{color: 'var(--text-primary)', fontWeight: 'bold', textAlign: 'center', fontSize: '120%'}}><AiOutlineMail  style={{padding: 3}}/>Email: Overtonc1@gmail.com </Typography>
              </div>
+             <br />
              <div className="contact2">
-               <Typography style={{color: 'white', textAlign: 'center', fontSize: '120%'}}>
-               <a style={{color:'white', marginBottom: 100,}} href="https://github.com/CaseyOverton/crypto-dashboard?organization=CaseyOverton&organization=CaseyOverton"><AiFillGithub style={{padding: 3}}/>Github</a>
+               <Typography style={{color: 'var(--text-primary)', fontWeight: 'bold',  textAlign: 'center', fontSize: '120%'}}>
+               <a style={{color: 'var(--text-primary)', fontWeight: 'bold',  marginBottom: 100,}} href="https://github.com/CaseyOverton"><AiFillGithub style={{padding: 3}}/>Github</a>
                </Typography>
+               
              </div>
+             <br />
              <div className="contact3">
-             <Typography style={{color: 'white', textAlign: 'center', fontSize: '120%'}}>
-               <a style={{color:'white', marginBottom: 100, }} href="https://github.com/CaseyOverton/crypto-dashboard?organization=CaseyOverton&organization=CaseyOverton"><AiFillLinkedin style={{padding: 3}}/>Linkedin </a>
+             <Typography style={{color: 'var(--text-primary)', fontWeight: 'bold',  textAlign: 'center', fontSize: '120%'}}>
+               <a style={{color: 'var(--text-primary)', fontWeight: 'bold',  marginBottom: 100, }} href="https://www.linkedin.com/in/casey-overton-3584151b1/"><AiFillLinkedin style={{padding: 3}}/>Linkedin </a>
                </Typography>
              </div>
              </div>
