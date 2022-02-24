@@ -21,9 +21,8 @@ export default function TimeLineComponent() {
           sx={{ m: 'auto 0' }}
           align="right"
           variant="body2"
-        
         >
-          2020-2021
+          2012-2017
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
@@ -31,28 +30,56 @@ export default function TimeLineComponent() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
-          <Typography variant="h6" component="span" style={{color: 'var(--text-primary)'}}> 
-            University of North Carolina 
+          <Typography variant="h6" component="span" style={{color: 'var(--text-primary)', fontSize: 25}}> 
+           East Carolina University
           </Typography>
-          <Typography style={{color: 'var(--text-primary)'}}>Full-Stack Web Development</Typography>
+
         </TimelineContent>
       </TimelineItem>
+
+
       <TimelineItem>
         <TimelineOppositeContent
-        style={{color: 'var(--text-primary)', fontSize: 20,}}
+        style={{color: 'var(--text-primary)',  fontWeight: 'bold', fontSize: 25}}
+        variant="h6"
+        component="span"
           sx={{ m: 'auto 0' }}
+          align="right"
           variant="body2"
         >
-          Full-Stack/Front End React Native <br/>Colorful Desires
+        University of North Carolina 
+        <Typography style={{color: 'var(--text-primary)'}}>Full-Stack Web Development</Typography>
         </TimelineOppositeContent>
+        
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot variant="outlined" color="primary"/>
+          <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
-          <Typography variant="h6" component="span" style={{color: 'var(--text-primary)',  fontWeight: 'bold', fontSize: 30 }}>
-          February 2021-Present
+          <Typography variant="h6" component="span" style={{color: 'var(--text-primary)', fontWeight: 'bold', fontSize: 30}}> 
+          2020-2021
+          </Typography>
+          {/* <Typography style={{color: 'var(--text-primary)'}}>Full-Stack Web Development</Typography> */}
+        </TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineOppositeContent
+        style={{color: 'var(--text-primary)', fontWeight: 'bold', fontSize: 30,}}
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+        >
+         February 2021-Present
+        </TimelineOppositeContent>
+        <TimelineSeparator >
+          <TimelineConnector />
+          <TimelineDot color="primary"/>
+          <TimelineConnector />
+        </TimelineSeparator >
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span" style={{color: 'var(--text-primary)',  fontWeight: 'bold', }}>
+          Colorful Desires Full-Stack Developer 
           </Typography>
         </TimelineContent>
       </TimelineItem>

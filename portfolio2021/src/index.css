@@ -23,6 +23,8 @@ code {
   --button: rgba(27, 60, 39, 0.805);
   --resume:  rgb(240, 193, 167);
   --resume2:  rgb(247, 201, 175);
+
+
 }
 [data-theme='dark'] {
   --background: rgb(19, 19, 19);

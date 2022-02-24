@@ -22,6 +22,12 @@ html {
   background-color: var(--resume1);
   padding: 20px;
 }
+.headerBackgroundC {
+  background-color: var(--resume1);
+  padding: 20px;
+  height: 1000;
+}
+
 .bg-text {
   color: var(--text-primary);
   background-color: var(--background);
@@ -40,7 +46,7 @@ html {
   height: 100px;
 }
 .bg-textC {
-  background-color: var(--background1);
+  background-color: var(--background);
   border: 2px solid rgb(147, 231, 165);
   margin-right: 4%;
   padding: 20px;
@@ -92,9 +98,8 @@ Button {
   margin-left: 20%;
 }
 .contactContainer {
-  flex-direction: column;
-  background-color: var(--background2);
-  height: 700,
+  /* background-color: var(--background2); */
+  height: 2000;
 }
 .resume {
   box-shadow: 0 4px 8px 0 rgba(29, 29, 29, 0.764);

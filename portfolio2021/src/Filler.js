@@ -17,6 +17,11 @@ const BulletPoints = () => {
             </Typography>
             </AnimationOnScroll>
             <hr style={{borderColor:'#9DFFCC' }}  />
+            <AnimationOnScroll animateIn='animate__fadeInUp'>
+                <Typography style={{color: 'var(--text-primary)',  fontSize: 25 , fontWeight: 'bold'}}>  <RiSubtractFill style={{padding: 10, marginBottom: -10, }}/>
+                1+ year with React-Native development team
+               </Typography>
+            </AnimationOnScroll>
             <br/>
             <br/>
             <AnimationOnScroll animateIn='animate__fadeInUp'>
@@ -28,7 +33,7 @@ const BulletPoints = () => {
              <br/>
              <AnimationOnScroll animateIn='animate__fadeInUp'>
             <Typography style={{color: 'var(--text-primary)',  fontSize: 25 , fontWeight: 'bold'}}>  <RiSubtractFill style={{padding: 10, marginBottom: -10, }}/>
-            Currently building ios/andriod application with team. Well versed in Agile Methodologies and Github collaborations. 
+            Well versed in Agile Methodologies and applications such as Figma, Meistertask and Github
                </Typography>
              </AnimationOnScroll >
              <br/> <br/>
