@@ -35,7 +35,7 @@ const Nav = () => {
     
     return (
       <ThemeProvider style={theme} >
-      <Breadcrumbs style={{color: 'black', fontWeight: 'boldest', display: 'flex',
+      <Breadcrumbs style={{marginTop: 10, color: 'black', fontWeight: 'boldest', display: 'flex',
     justifyContent: 'center', fontSize:  20,}} aria-label="breadcrumb">
      <Link  style={{color: 'black', fontWeight: 'bold'}} href="/" >
         Home

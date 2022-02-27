@@ -79,7 +79,10 @@ export default function TimeLineComponent() {
         </TimelineSeparator >
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span" style={{color: 'var(--text-primary)',  fontWeight: 'bold', }}>
-          Colorful Desires Full-Stack Developer 
+          Colorful Desires <br />
+          </Typography>
+          <Typography  component="span" style={{color: 'var(--text-primary)' }}>
+          Full-Stack Developer 
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -92,20 +95,43 @@ export default function TimeLineComponent() {
           <TimelineConnector sx={{ bgcolor: 'secondary.main',  }} />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
-          <Typography variant="h6" component="span">
-            1+ Year in React/React Native
-          </Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
           <TimelineDot color="secondary" />
-          <TimelineConnector />
+          <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+            1+ year of React-Native experience
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+          <TimelineDot color="secondary" />
+          <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
             MERN STACK experience
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+          <TimelineDot color="secondary" />
+          <TimelineConnector sx={{ bgcolor: 'secondary.main' }}/>
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+            Agile Methodologies Experience
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -119,7 +145,7 @@ export default function TimeLineComponent() {
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span" >
-            REDUX Experience
+            REDUX Knowledgeable
           </Typography>
         </TimelineContent>
       </TimelineItem>
