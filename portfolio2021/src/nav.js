@@ -3,7 +3,7 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Moment from 'react-moment';
-
+import img from '../src/pictures/IMG_8633.jpeg'
 const Nav = () => {
   const style = 
   {

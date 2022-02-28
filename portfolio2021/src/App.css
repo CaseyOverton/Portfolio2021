@@ -6,11 +6,8 @@ html {
 }
 .NameText {
   color: var(--text-primary);
-  /* background-color: var(--background); */
-  margin-left: 20px;
+
   padding: 40px;
-  margin-top: '-120%';
-  height: 1500;
   /* font-family: 'Major Mono Display', monospace; */
 }
 .fillerText { 
@@ -19,13 +16,15 @@ html {
   font-weight: 700;
 }
 .headerBackground {
+  justify-content: center;
+  align-items: center;
   background-color: var(--resume1);
-  padding: 20px;
+  padding: 10px;
+
 }
 .headerBackgroundC {
   background-color: var(--background2);
   padding: 20px;
-  height: 1000;
 }
 
 .bg-text {
@@ -39,18 +38,25 @@ html {
 }
 .bg-textR {
   padding: 20px;
+  color: var(--resume2);
   height: 800;
   background-color: var(--resume1);
   border: 2px solid rgb(52, 97, 86);
   margin-right: 4%;
-  color: var(--background);
+  
 }
 .bg-textC {
-  background-color: var(--background);
+  /* background-color: var(--background);
   border: 2px solid rgb(121, 141, 125);
-  margin-right: 4%;
+  margin-right: 4%; */
+
   padding: 20px;
-  height: auto;
+  color: var(--text-primary);
+  height: 800;
+  /* background-color: var(--resume1); */
+  border: 2px solid rgb(52, 97, 86);
+  margin-right: 4%;
+
 }
 .weatherDisplay {
   color: 'white';
