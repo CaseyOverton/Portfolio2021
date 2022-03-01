@@ -3,7 +3,7 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Moment from 'react-moment';
-
+import img from '../src/pictures/IMG_8633.jpeg'
 const Nav = () => {
   const style = 
   {
@@ -18,15 +18,15 @@ const Nav = () => {
         'Spartan',
         'sans-serif',
       ].join(','),
-      fontSize: 30,
+      fontSize: 40,
     },
         primary: {
-            main: '#F8F8F8',
+            main: 'black',
             contrastText: '#fff',
         },
         secondary: {
-            light: '#F8F8F8',
-            main: '#00a883',
+            light: 'black',
+            main: 'black',
             dark: '#007856',
             contrastText: '#000'
         }
@@ -35,18 +35,19 @@ const Nav = () => {
     
     return (
       <ThemeProvider style={theme} >
-      <Breadcrumbs style={style} aria-label="breadcrumb">
-     <Link  color='secondary' href="/">
+      <Breadcrumbs style={{marginTop: 10, color: 'black', fontWeight: 'boldest', display: 'flex',
+    justifyContent: 'center', fontSize:  20,}} aria-label="breadcrumb">
+     <Link  style={{color: 'black', fontWeight: 'bold'}} href="/" >
         Home
       </Link>
-      <Link  color='secondary' href="/Contact">
+      <Link style={{color: 'black', fontWeight: 'bold', fontSize:  20,}}  href="/Contact">
         Contact
       </Link>
-      <Link   color='secondary' href="/Resume">
+      <Link  style={{color: 'black', fontWeight: 'bold', fontSize:  20,}}   href="/Resume">
         Resume
       </Link>
       <div style={{paddingRight: '-50%', }} >
-      <Moment  style={{color: '#00a883', fontSize: 20,}} format='h:mm a'>{date}</Moment>
+      <Moment  style={{color: 'black', fontSize: 20, fontWeight: 'bold'}} format='h:mm a'>{date}</Moment>
       </div>
     </Breadcrumbs>
     </ThemeProvider>

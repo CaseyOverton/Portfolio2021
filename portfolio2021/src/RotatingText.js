@@ -14,9 +14,9 @@ const theme = createMuiTheme({
 const RotatingText = () => {
     return (
         <ThemeProvider theme={theme}>
-        <Typography>Proficient In: </Typography>
+        <Typography style={{fontSize:  20, fontWeight: 'bold'}}>Proficient In: </Typography>
         <div>
-         <ReactRotatingText items={['JavaScript', 'React', 'HTML/CSS', 'React-Native', 'XML', ]} color='white' fontFamily='Spartan' />
+         <ReactRotatingText items={['JavaScript', 'React', 'HTML/CSS', 'React-Native', 'XML', ]} color='white'/>
         </div>
         </ThemeProvider>
     )

@@ -1,30 +1,63 @@
 body,
 html {
-  background-image: url(../src/pictures/backgroundimg1.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: repeat;
-  background-color: '#0B0E1D';
+  /* background-image: url(./pictures/BackgroundTry1.png); */
+  background-color: var(--background);
+  color: var(--text-primary);
 }
 .NameText {
-  color: white;
-  margin-left: 20px;
+  color: var(--text-primary);
+
   padding: 40px;
-  margin-top: '-120%';
-  height: 1500;
   /* font-family: 'Major Mono Display', monospace; */
 }
+.fillerText { 
+  color: var(--text-primary);
+  font-size: 100;
+  font-weight: 700;
+}
 .headerBackground {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--resume1);
+  padding: 10px;
+
+}
+.headerBackgroundC {
+  background-color: var(--background2);
   padding: 20px;
 }
+
 .bg-text {
-  /* position: 'absolute'; */
-  /* background-color: rgb(152, 72, 72); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.911);
-  border: 2px solid rgb(119, 255, 223);
+  color: var(--text-primary);
+  background-color: var(--background);
+  border: 2px solid var(--bar1);
   margin-right: 4%;
+  font-weight: 700;
   padding: 20px;
   height: auto;
+}
+.bg-textR {
+  color: var(--text-primary);
+  background-color: var(--background);
+  padding: 20px;
+  height: 800;
+  border: 2px solid rgb(52, 97, 86);
+  margin-right: 4%;
+  
+}
+.bg-textC {
+  /* background-color: var(--background);
+  border: 2px solid rgb(121, 141, 125);
+  margin-right: 4%; */
+
+  padding: 10px;
+  color: var(--text-primary);
+  background-color: var(--background);
+  height: 800;
+  /* background-color: var(--resume1); */
+  border: 2px solid rgb(52, 97, 86);
+  margin-right: 4%;
+
 }
 .weatherDisplay {
   color: 'white';
@@ -34,10 +67,67 @@ html {
   padding: 40;
   margin-top: 10,
 }
-
+Button {
+  color: var(--buttonText);
+  background-color: var(--button);
+  border: 2px var(--text-primary) solid;
+  float: right;
+  margin-right: 5;
+  border-radius: 10px;
+  border-width: 10;
+  transition: all .5s;
+}
 .react-rotating-text-cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
 }
+.contact1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--background);
+  border: 2px solid rgb(132, 155, 138);
+  margin-right: 20%;
+  margin-left: 20%;
+  padding: 10px;
+}
+.contact2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--background);
+  border: 2px solid rgb(132, 155, 138);
+  margin-right: 20%;
+  margin-left: 20%;
+  padding: 10px;
+}
+.contact3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--background);
+  border: 2px solid rgb(132, 155, 138);
+  padding: 10px;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+.contactContainer {
+  color: var(--text-primary);
+  background-color: var(--background);
+  /* background-color: var(--background2); */
+}
+.resume {
+  box-shadow: 0 4px 8px 0 rgba(29, 29, 29, 0.764);
+  background-color: var(--resume1);
+  border: 2px solid rgb(120, 179, 175);
+  padding: 10px;
+  margin-left: 50;
+  margin-right: '20%';
+  width: '90%';
+}
+@media only screen and (max-width: 600px) {
+  .imageSlide {
+      display: none;
+  }
+}
+/* @media (max-width: 479px) {
+  body {
+      font-size: 13px;
+  } */
+/* } */
 
 @keyframes blinking-cursor {
   0% {

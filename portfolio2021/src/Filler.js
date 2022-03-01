@@ -2,29 +2,51 @@ import ReactRotatingText from 'react-rotating-text'
 import './App.css';
 import Typography from '@material-ui/core/Typography';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 import '../src/App.css'
-
-const Filler = () => {
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { RiSubtractFill } from "react-icons/ri";
+const BulletPoints = () => {
     return (
-        <div>
+        <div style={{height: 700, marginTop: 100, }}>
              <br></br>
              <br></br>
-            <Typography style={{color: 'white', fontSize: 25, }}>
+             <AnimationOnScroll animateIn='animate__fadeInUp'>
+            <Typography style={{color: 'var(--text-primary)',  fontSize: 35 , fontWeight: 'bold'}}>
                About Me
             </Typography>
+            </AnimationOnScroll>
             <hr style={{borderColor:'#9DFFCC' }}  />
-            <br></br>
-            <Typography style={{color: 'white' }}>
-                 Passionate hard-working web/mobile developer interested in frontend and full-stack development. Experience in react and react native frameworks as well as Javascript and Node/NPM. Currently building ios/andriod application with team. Well versed in Agile Methodologies and Github collaborations. Looking for an environment to learn as much possible and produce dry, reusable code!
-             </Typography>
-             <br></br>
-             <br></br>
-             <br></br>
+            <AnimationOnScroll animateIn='animate__fadeInUp'>
+                <Typography style={{color: 'var(--text-primary)',  fontSize: 25 , fontWeight: 'bold'}}>  <RiSubtractFill style={{padding: 10, marginBottom: -10, }}/>
+                1+ year with React-Native development team
+               </Typography>
+            </AnimationOnScroll>
+            <br/>
+            <br/>
+            <AnimationOnScroll animateIn='animate__fadeInUp'>
+                <Typography style={{color: 'var(--text-primary)',  fontSize: 25 , fontWeight: 'bold'}}>  <RiSubtractFill style={{padding: 10, marginBottom: -10, }}/>
+                Interested in frontend and full-stack development.
+               </Typography>
+            </AnimationOnScroll>
+             <br/>
+             <br/>
+             <AnimationOnScroll animateIn='animate__fadeInUp'>
+            <Typography style={{color: 'var(--text-primary)',  fontSize: 25 , fontWeight: 'bold'}}>  <RiSubtractFill style={{padding: 10, marginBottom: -10, }}/>
+            Well versed in Agile Methodologies and applications such as Figma, Meistertask and Github
+               </Typography>
+             </AnimationOnScroll >
+             <br/> <br/>
+             <AnimationOnScroll animateIn='animate__fadeInUp'>
+            <Typography style={{color: 'var(--text-primary)',  fontSize: 25 , fontWeight: 'bold'}}>  <RiSubtractFill style={{padding: 10, marginBottom: -10, }}/>
+            Looking for an environment to learn as much possible and produce dry, reusable code!
+               </Typography>
+             </AnimationOnScroll>
+             <br/> <br/>
              <br></br>
              <br></br>
         </div>
     )
     }
-export default Filler;
+export default BulletPoints;
 

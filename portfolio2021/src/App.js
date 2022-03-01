@@ -1,50 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import './App.css';
-import Typography from '@material-ui/core/Typography';
+import Home from '../src/Home/HomePage'
+import Contact from './Contact/Contact'
+import Resume from '../src/Resume.js'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Nav from '../src/nav'
-import RotatingText from '../src/RotatingText'
-import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import Filler from '../src/Filler';
-import Gallery from './PictureSlide2/React-Carousel'
+import useLocalStorage from 'use-local-storage'
+import Button from '@mui/material/Button';
+import { IoIosSunny } from "react-icons/io";
 function App() {
-  const theme = createMuiTheme({
-    typography: {
-      fontFamily: [
-        'Spartan',
-        'sans-serif',
-      ].join(','),
-    },});
+  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+
+  const switchTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  } 
   return (
-   <div style={{ flexDirection: 'auto', }}>
-    {/* <Slide bottom> */}
-    <Nav />
-    <ThemeProvider theme={theme}>
-    <div className="headerBackground">
+    <div data-theme={theme}>
+    <Router>
+      <Nav />
+        <button onClick={switchTheme}>
+         {theme === 'light' ? 'Dark' : 'Light'} Theme <div style={{marginTop:2}}><IoIosSunny /> </div>
+        </button>
+        <Routes>
+           <Route exact path="/" element={<Home />} />
+               <Route index element={<Home />} />
+               <Route path="/contact" element={<Contact />} />
+               <Route path="/resume" element={<Resume />}  />
+           </Routes>
+    </Router>
+    </div>
+        
     
-      <div   className="bg-text">
-        <div className="NameText">
-          <Typography style={{fontSize: '350%', marginTop: 5, marginLeft: -30, textAlign: 'left'}}>Casey Overton</Typography>
-          <Typography style={{fontSize: '150%',  marginLeft: -20, textAlign: 'left'}}>Full Stack/Front End Developer</Typography>
-          <div style={{ marginLeft: -20, }} >
-            <RotatingText />
-          </div>
-       </div>
-     <div>
-        <Filler />
-     </div>
-       <div>
-           <Gallery />
-       </div>
-    </div> 
-    </div>
-    </ThemeProvider>
-    {/* </Slide> */}
-    </div>
- 
   );
 }
 
-
-
-
 export default App;
+
+

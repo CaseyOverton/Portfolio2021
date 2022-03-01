@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:root {
+  --background: rgb(188, 206, 211);
+  --background1: rgb(118, 160, 127);
+  --background2: rgb(118, 160, 127);
+  --text-primary: rgb(24, 30, 26);
+  --text-secondary: royalblue;
+  --accent: rgb(57, 119, 114);
+  --bar1: rgb(49, 84, 85);
+  --buttonText: rgb(252, 252, 252);
+  --button: rgba(27, 60, 39, 0.805);
+  --resume:  rgb(123, 111, 104);
+  --resume2:  rgb(35, 33, 31);
+}
+[data-theme='dark'] {
+  --background: rgb(19, 19, 19);
+  --background2: rgb(39, 51, 42);
+  --text-primary: rgb(231, 236, 234);
+  --text-secondary: grey;
+  --accent: darkred;
+  --buttonText: rgb(5, 24, 18);
+  --button: rgba(217, 249, 243, 0.755);
+  --resume:  rgb(43, 59, 49);
+  --resume2:  rgb(244, 236, 232);
+
+  
+}
