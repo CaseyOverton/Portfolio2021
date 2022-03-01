@@ -118,7 +118,7 @@ export default function TimeLineComponent() {
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
-            MERN STACK experience
+            MERN STACK capable!
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -131,7 +131,7 @@ export default function TimeLineComponent() {
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
-            Agile Methodologies Experience
+            Agile Methodologies Work Experience
           </Typography>
         </TimelineContent>
       </TimelineItem>

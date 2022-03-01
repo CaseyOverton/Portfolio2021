@@ -17,7 +17,7 @@ const Gallery = () => {
         {
             <>
             <img style={{height: '70%', width:'60%',  marginBottom: 100,}} src={img3} />
-            <div style={{backgroundColor: 'transparent', border: '2px solid rgb(52, 97, 86)', height: '70%', maxHeight: 350,  display: 'inline-block', overflowY: 'scroll'}}>
+            <div style={{backgroundColor: 'transparent', border: '2px solid rgb(52, 97, 86)', height: '70%', width: '60%', display: 'inline-block', overflowY: 'scroll'}}>
               <Typography style={{ fontWeight: 'bold', padding: 30, color: 'var(--text-primary)', textAlign: 'center',}}>React powered website filters through a list of names, as the user types into an input. The data is obtained by an API with popular NPM package, axios. A javascript function was used to filter through each name typed in search bar.</Typography>
               <Typography>
               <a style={{color: 'var(--text-primary)', marginBottom: 100, padding: 20, alignText: 'center', fontWeight: 'bold'}}href='https://jamescbaldwin.github.io/crypto-dashboard/'>Deployed Website</a><br></br>
@@ -30,7 +30,7 @@ const Gallery = () => {
           {
          <>
          <img style={{ height: '70%', width:'60%', border: '2px solid rgb(52, 97, 86)' }} src={img2} />
-         <div style={{backgroundColor: 'transparent', border: '2px solid rgb(52, 97, 86)', height: '70%', maxHeight: 350, width: '60%', display: 'inline-block', overflowY: 'scroll'}} >
+         <div style={{backgroundColor: 'transparent', border: '2px solid rgb(52, 97, 86)', height: '70%', width: '60%', display: 'inline-block', overflowY: 'scroll'}} >
            <Typography style={{  fontWeight: 'bold', padding: 30, color: 'var(--text-primary)', textAlign: 'center',}}>Garage-Swap is a project built by team of UNC developers to work with react application that displays data using MongoDB</Typography>
            <div style={{padding: 20, alignText: 'center', color: 'var(--text-primary)',}}>
            <Typography style={{color:'black', fontWeight: 'bold',color: 'var(--text-primary)' }} >
@@ -46,7 +46,7 @@ const Gallery = () => {
           {
          <>
          <img style={{ height: '70%', width:'60%', border: '2px solid rgb(52, 97, 86)' }} src={img4} />
-         <div style={{backgroundColor: 'transparent', border: '2px solid rgb(52, 97, 86)', height: '70%', maxHeight: 350, width: '60%', display: 'inline-block', overflowY: 'scroll'}} >
+         <div style={{backgroundColor: 'transparent', border: '2px solid rgb(52, 97, 86)', height: '70%', width: '60%', display: 'inline-block', overflowY: 'scroll'}} >
            <Typography style={{  fontWeight: 'bold', padding: 30, color: 'var(--text-primary)', textAlign: 'center',}}>Crypto-Tracker is a React Web Application built by team of UNC developers to sort and display stock data. The website is fully responsive and uses local storage to save user favorites.</Typography>
            <div style={{padding: 20, alignText: 'center', color: 'var(--text-primary)',}}>
            <Typography style={{color:'black', fontWeight: 'bold',color: 'var(--text-primary)' }} >

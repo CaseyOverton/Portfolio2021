@@ -37,10 +37,10 @@ html {
   height: auto;
 }
 .bg-textR {
+  color: var(--text-primary);
+  background-color: var(--background);
   padding: 20px;
-  color: var(--resume2);
   height: 800;
-  background-color: var(--resume1);
   border: 2px solid rgb(52, 97, 86);
   margin-right: 4%;
   
@@ -50,8 +50,9 @@ html {
   border: 2px solid rgb(121, 141, 125);
   margin-right: 4%; */
 
-  padding: 20px;
+  padding: 10px;
   color: var(--text-primary);
+  background-color: var(--background);
   height: 800;
   /* background-color: var(--resume1); */
   border: 2px solid rgb(52, 97, 86);
@@ -104,8 +105,9 @@ Button {
   margin-left: 20%;
 }
 .contactContainer {
+  color: var(--text-primary);
+  background-color: var(--background);
   /* background-color: var(--background2); */
-  height: 2000;
 }
 .resume {
   box-shadow: 0 4px 8px 0 rgba(29, 29, 29, 0.764);

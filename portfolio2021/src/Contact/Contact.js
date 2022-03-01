@@ -16,11 +16,11 @@ const Contact = () => {
         },});
     return (
         <ThemeProvider theme={theme}>
-             <div className="headerBackgroundC">
-                 <div className="bg-textC">
-                      <div className="NameText">
-                         <Typography style={{fontSize: '350%', marginTop: 5,fontWeight: 'bold', marginLeft: -30, textAlign: 'left'}}>Casey Overton</Typography>
-                         <Typography style={{fontSize: '150%',  marginLeft: -20, textAlign: 'left', fontWeight: 'bold'}}>Full Stack/Front End Developer</Typography>
+             <div className="headerBackground">
+                 <div className="bg-textR">
+                      <div className="NameText" style={{marginTop: -40,}}>
+                         <Typography style={{fontSize: '250%',marginTop: 15, marginLeft: -30, fontWeight: 'bold', textAlign: 'left'}}>Casey Overton</Typography>
+                         <Typography style={{fontSize: '120%',  marginLeft: -20, fontWeight: 'bold',textAlign: 'left'}}>Contact</Typography>
                       </div>
                   </div>
              </div>
